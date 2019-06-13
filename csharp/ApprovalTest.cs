@@ -10,7 +10,7 @@ namespace csharp
     {
         [Test]
         public void ThirtyDays()
-        {
+        { 
             var lines = File.ReadAllLines("ThirtyDays.txt");
 
             StringBuilder fakeoutput = new StringBuilder();
