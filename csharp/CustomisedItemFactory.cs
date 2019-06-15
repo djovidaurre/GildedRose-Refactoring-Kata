@@ -1,16 +1,15 @@
-﻿using csharp.Dto;
-using csharp.Interface;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace csharp.Dto
+namespace csharp
 {
     public class CustomisedItemFactory
     {
         Dictionary<string, ICustomisedItem> ITEM_TYPES_LIST = new Dictionary<string, ICustomisedItem>();
+
         public static string SULFURAS = "Sulfuras, Hand of Ragnaros";
         public static string AGED_BRIE = "Aged Brie";
         public static string BACKTAGE_PASSES_ITEM = "Backstage passes to a TAFKAL80ETC concert";
@@ -24,7 +23,6 @@ namespace csharp.Dto
             ITEM_TYPES_LIST[CONJURED_ITEM] = new BackstagePassesItem(item);
             ITEM_TYPES_LIST[CONJURED_ITEM]= new ConjuredItem(item);
         }
-
 
         public ICustomisedItem CustomiseItem(Item item)
         {

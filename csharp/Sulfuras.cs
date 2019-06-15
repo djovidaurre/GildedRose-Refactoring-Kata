@@ -1,16 +1,16 @@
-﻿using csharp.Interface;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace csharp.Dto
+namespace csharp
 {
     public class Sulfuras : ICustomisedItem
     { 
         public void UpdateState()
         {
+
         }
     }
 }

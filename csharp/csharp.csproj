@@ -62,14 +62,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApprovalTest.cs" />
-    <Compile Include="Dto\ConjuredItem.cs" />
-    <Compile Include="Interface\ICustomisedItem.cs" />
-    <Compile Include="Dto\CustomisedItemFactory.cs" />
-    <Compile Include="Dto\AgedBrie.cs" />
-    <Compile Include="Dto\BackstagePassesItem.cs" />
-    <Compile Include="Dto\QualityValues.cs" />
-    <Compile Include="Dto\StandardItem.cs" />
-    <Compile Include="Dto\Sulfuras.cs" />
+    <Compile Include="ConjuredItem.cs" />
+    <Compile Include="ICustomisedItem.cs" />
+    <Compile Include="CustomisedItemFactory.cs" />
+    <Compile Include="AgedBrie.cs" />
+    <Compile Include="BackstagePassesItem.cs" />
+    <Compile Include="QualityValues.cs" />
+    <Compile Include="StandardItem.cs" />
+    <Compile Include="Sulfuras.cs" />
     <Compile Include="GildedRose.cs" />
     <Compile Include="GildedRoseTest.cs" />
     <Compile Include="Item.cs" />

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace csharp.Dto
+namespace csharp
 {
     public class ConjuredItem : StandardItem
     {
@@ -12,10 +12,5 @@ namespace csharp.Dto
         {
 
         }
-
-        //public override  int DecreasingValueOverZeroDaysToSell()
-        //{
-        //    return 2;
-        //}
     }
 }

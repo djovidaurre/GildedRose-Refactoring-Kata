@@ -1,11 +1,10 @@
-﻿using csharp.Interface;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace csharp.Dto
+namespace csharp
 {
     public class StandardItem : ICustomisedItem
     {
@@ -19,18 +18,13 @@ namespace csharp.Dto
         public void UpdateState()
         {
             DecreaseSellByDayValueByOne();
-            if (SellByDayValueIsOverZero() && item.Quality > 0)
+            if (IsSellByDayValueIsOverZero() && IsQualityValueAboutZero())
             {
                 DecreaseQualityBy(DecreasingValueOverZeroDaysToSell());
             }
             else
             {
-                
-                //if (item.Quality > 0)
-                //{
-                    DecreaseQualityBy(DecreasingValueForZeroOrLessDaysToSell());
-                //}
-                
+                DecreaseQualityBy(DecreasingValueForZeroOrLessDaysToSell());                
             }
         }
 
@@ -44,7 +38,7 @@ namespace csharp.Dto
             item.SellIn -= 1;
         }
 
-        private bool SellByDayValueIsOverZero()
+        private bool IsSellByDayValueIsOverZero()
         {
             return item.SellIn >= 0;
         }
@@ -52,6 +46,11 @@ namespace csharp.Dto
         private void DecreaseQualityBy(int qualityValue)
         {
             item.Quality -= qualityValue;
+        }
+
+        public bool IsQualityValueAboutZero()
+        {
+            return  item.Quality > 0;
         }
 
         private int DecreasingValueForZeroOrLessDaysToSell()

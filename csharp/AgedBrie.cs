@@ -1,15 +1,14 @@
-﻿using csharp.Interface;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace csharp.Dto
+namespace csharp
 {
     public class AgedBrie : ICustomisedItem
     {
-        private Item item;
+        Item item;
 
         public AgedBrie(Item item)
         {
@@ -39,7 +38,7 @@ namespace csharp.Dto
         }
         private bool IsSellInUnderZero()
         {
-            return item.SellIn<0;
+            return item.SellIn< 0;
         }
 
         private bool IsUnderHighestQualityValue()

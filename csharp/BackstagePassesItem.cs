@@ -1,15 +1,14 @@
-﻿using csharp.Interface;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace csharp.Dto
+namespace csharp
 {
     public class BackstagePassesItem :ICustomisedItem
     {
-        private Item item;
+        Item item;
 
         public BackstagePassesItem(Item item)
         {
@@ -19,15 +18,15 @@ namespace csharp.Dto
         public void UpdateState()
         {
             DecreaseSellByDayValueByOne();
-            if (SellByDayValueIsOver(10))
+            if (IsSellByDayValueIsOver(10))
             {
                 IncreaseQualityBy(1);
             }
-            else if (SellByDayValueIsOver(5))
+            else if (IsSellByDayValueIsOver(5))
             {
                 IncreaseQualityBy(2);
             }
-            else if (SellByDayValueIsOver(0))
+            else if (IsSellByDayValueIsOver(0))
             {
                 IncreaseQualityBy(3);
             }
@@ -42,7 +41,7 @@ namespace csharp.Dto
             item.SellIn -= 1;
         }
 
-        private bool SellByDayValueIsOver(int dayNumber)
+        private bool IsSellByDayValueIsOver(int dayNumber)
         {
             return item.SellIn >= dayNumber;
         }
