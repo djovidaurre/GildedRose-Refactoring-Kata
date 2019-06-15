@@ -8,11 +8,11 @@ namespace csharp.UpdateStrategy
 {
     public class AgedBrieUpdateStrategy : IUpdateStrategy
     {
-        Item item;
+        Item Item;
 
         public AgedBrieUpdateStrategy(Item item)
         {
-            this.item = item;
+            this.Item = item;
         }
 
         public void UpdateState()
@@ -29,21 +29,21 @@ namespace csharp.UpdateStrategy
 
         private void DecreaseSellByDayValueByOne()
         {
-            item.SellIn -= 1;
+            Item.SellIn -= 1;
         }
 
         private void IncreaseQualityByOne()
         {
-            item.Quality += 1;
+            Item.Quality += 1;
         }
         private bool IsSellInUnderZero()
         {
-            return item.SellIn< 0;
+            return Item.SellIn< 0;
         }
 
         private bool IsUnderHighestQualityValue()
         {
-            return item.Quality < 50;
+            return Item.Quality < 50;
 
         }
 

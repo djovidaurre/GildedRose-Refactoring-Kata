@@ -8,11 +8,11 @@ namespace csharp.UpdateStrategy
 {
     public class BackstagePassesItem :IUpdateStrategy
     {
-        Item item;
+        Item Item;
 
         public BackstagePassesItem(Item item)
         {
-            this.item = item;
+            this.Item = item;
         }
 
         public void UpdateState()
@@ -39,22 +39,22 @@ namespace csharp.UpdateStrategy
 
         private void DecreaseSellByDayValueByOne()
         {
-            item.SellIn -= 1;
+            Item.SellIn -= 1;
         }
 
         private bool IsSellByDayValueIsOver(int dayNumber)
         {
-            return item.SellIn >= dayNumber;
+            return Item.SellIn >= dayNumber;
         }
 
         private void IncreaseQualityBy(int qualityValue)
         {
-            item.Quality += qualityValue;
+            Item.Quality += qualityValue;
         }
 
         private void DropQualityToZero()
         {
-            item.Quality = 0;
+            Item.Quality = 0;
         }
     }
 }

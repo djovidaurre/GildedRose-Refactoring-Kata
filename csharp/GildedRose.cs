@@ -6,11 +6,19 @@ namespace csharp
     {
         public static int LOWEST_QUALITY_VALUE_POSSIBLE = 0;
 
-        IList<Item> items;
+        public IList<Item> items;
 
         public GildedRose(IList<Item> items)
         {
             this.items = items;
+        }
+        public GildedRose(Item item)
+        {
+            items.Add(item);
+        }
+        public GildedRose(string Name, int SellIn, int Quality)
+        {
+            items.Add(new Item(Name,SellIn,Quality));
         }
 
         public void UpdateQuality()

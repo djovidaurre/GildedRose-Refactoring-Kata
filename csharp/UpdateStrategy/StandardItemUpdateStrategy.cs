@@ -8,11 +8,11 @@ namespace csharp.UpdateStrategy
 {
     public class StandardItemUpdateStrategy : IUpdateStrategy
     {
-        private Item item;
+        private Item Item;
 
         public StandardItemUpdateStrategy(Item item)
         {
-            this.item = item;
+            this.Item = item;
         }
 
         public void UpdateState()
@@ -36,22 +36,22 @@ namespace csharp.UpdateStrategy
 
         private void DecreaseSellByDayValueByOne()
         {
-            item.SellIn -= 1;
+            Item.SellIn -= 1;
         }
 
         private bool IsSellByDayValueIsOverZero()
         {
-            return item.SellIn >= 0;
+            return Item.SellIn >= 0;
         }
 
         private void DecreaseQualityBy(int qualityValue)
         {
-            item.Quality -= qualityValue;
+            Item.Quality -= qualityValue;
         }
 
         public bool IsQualityValueAboutZero()
         {
-            return  item.Quality > 0;
+            return Item.Quality > 0;
         }
 
         private int DecreasingValueForZeroOrLessDaysToSell()
