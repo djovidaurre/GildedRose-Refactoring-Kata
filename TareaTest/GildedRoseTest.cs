@@ -50,7 +50,7 @@ namespace TareaTest
 
             app.UpdateQuality();
 
-            //Assert.Equals(-1, itemSellByDayNumber(app));
+            Assert.Equals(-1, itemSellByDayNumber(app));
         }
 
         private GildedRose newGildedRose(String itemName, int itemSellIn, int itemQuality)

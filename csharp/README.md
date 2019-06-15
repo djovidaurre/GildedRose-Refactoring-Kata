@@ -16,6 +16,6 @@ Uso Patrón
 - Uso del patron fabrica para crear y devolver la instancia de estrategia para el tipo unico, resolviendo el problema de mapeo de encontrar la estrategia correcta.
 
 
--[Pruebas Unitarias Gilded Rose](http://cyber-dojo.org/forker/fork/5C5AC766B0?avatar=koala&tag=3)
+- [Pruebas Unitarias Gilded Rose](https://github.com/djovidaurre/GildedRose-Refactoring-Kata/tree/TareaSoe/TareaTest)
 
 Trabajo realizado por DEYVI JOSUE ORTIZ VIDAURRE

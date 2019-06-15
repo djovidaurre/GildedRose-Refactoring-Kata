@@ -61,7 +61,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Test\ApprovalTest.cs" />
     <Compile Include="UpdateStrategy\ConjuredItemUpdateStrategy.cs" />
     <Compile Include="IUpdateStrategy.cs" />
     <Compile Include="UpdateStrategyFactory.cs" />
@@ -72,7 +71,6 @@
     <Compile Include="UpdateStrategy\StandardItemUpdateStrategy.cs" />
     <Compile Include="UpdateStrategy\SulfuraUpdateStrategy.cs" />
     <Compile Include="GildedRose.cs" />
-    <Compile Include="Test\GildedRoseTest.cs" />
     <Compile Include="Dto\Item.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
