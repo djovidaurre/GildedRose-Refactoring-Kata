@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace csharp
+namespace csharp.UpdateStrategy
 {
-    public class BackstagePassesItem :ICustomisedItem
+    public class BackstagePassesItem :IUpdateStrategy
     {
         Item item;
 
@@ -18,6 +18,7 @@ namespace csharp
         public void UpdateState()
         {
             DecreaseSellByDayValueByOne();
+
             if (IsSellByDayValueIsOver(10))
             {
                 IncreaseQualityBy(1);

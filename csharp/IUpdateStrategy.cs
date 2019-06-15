@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace csharp
 {
-    public class ConjuredItem : StandardItem
+    public interface IUpdateStrategy
     {
-        public ConjuredItem(Item item) : base(item)
-        {
-
-        }
+        void UpdateState();
     }
 }

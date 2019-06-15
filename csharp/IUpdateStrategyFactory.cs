@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace csharp
 {
-    public interface ICustomisedItem
+    public interface IUpdateStrategyFactory
     {
-        void UpdateState();
+        IUpdateStrategy Create(Item item);
     }
 }

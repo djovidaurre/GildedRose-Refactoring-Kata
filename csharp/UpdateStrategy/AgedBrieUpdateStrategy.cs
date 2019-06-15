@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace csharp
+namespace csharp.UpdateStrategy
 {
-    public class AgedBrie : ICustomisedItem
+    public class AgedBrieUpdateStrategy : IUpdateStrategy
     {
         Item item;
 
-        public AgedBrie(Item item)
+        public AgedBrieUpdateStrategy(Item item)
         {
             this.item = item;
         }

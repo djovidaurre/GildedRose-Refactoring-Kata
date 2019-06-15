@@ -31,9 +31,9 @@ namespace csharp
         }
 
 
-        private ICustomisedItem CustomisedItem(Item item)
+        private IUpdateStrategy CustomisedItem(Item item)
         {
-            return new CustomisedItemFactory(item).CustomiseItem(item);
+            return new UpdateStrategyFactory(item).Create(item);
         }
 
         private bool IsReachedLowestQualityValue(Item item)

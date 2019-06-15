@@ -10,7 +10,7 @@ namespace csharp
     {
         public static int HighestValuePossible(Item item)
         {
-            if (item.Name.Equals(CustomisedItemFactory.SULFURAS))
+            if (item.Name.Equals(UpdateStrategyFactory.SULFURA))
             {
                 return 80;
             }

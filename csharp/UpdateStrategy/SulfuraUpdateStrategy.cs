@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace csharp
+namespace csharp.UpdateStrategy
 {
-    public class Sulfuras : ICustomisedItem
+    public class SulfurasUpdateStrategy : IUpdateStrategy
     { 
         public void UpdateState()
         {

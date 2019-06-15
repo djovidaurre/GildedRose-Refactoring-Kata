@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace csharp
+namespace csharp.UpdateStrategy
 {
-    public class StandardItem : ICustomisedItem
+    public class StandardItemUpdateStrategy : IUpdateStrategy
     {
         private Item item;
 
-        public StandardItem(Item item)
+        public StandardItemUpdateStrategy(Item item)
         {
             this.item = item;
         }
@@ -18,6 +18,7 @@ namespace csharp
         public void UpdateState()
         {
             DecreaseSellByDayValueByOne();
+
             if (IsSellByDayValueIsOverZero() && IsQualityValueAboutZero())
             {
                 DecreaseQualityBy(DecreasingValueOverZeroDaysToSell());

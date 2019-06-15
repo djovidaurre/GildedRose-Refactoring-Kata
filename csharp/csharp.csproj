@@ -61,18 +61,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ApprovalTest.cs" />
-    <Compile Include="ConjuredItem.cs" />
-    <Compile Include="ICustomisedItem.cs" />
-    <Compile Include="CustomisedItemFactory.cs" />
-    <Compile Include="AgedBrie.cs" />
-    <Compile Include="BackstagePassesItem.cs" />
-    <Compile Include="QualityValues.cs" />
-    <Compile Include="StandardItem.cs" />
-    <Compile Include="Sulfuras.cs" />
+    <Compile Include="Test\ApprovalTest.cs" />
+    <Compile Include="UpdateStrategy\ConjuredItemUpdateStrategy.cs" />
+    <Compile Include="IUpdateStrategy.cs" />
+    <Compile Include="UpdateStrategyFactory.cs" />
+    <Compile Include="UpdateStrategy\AgedBrieUpdateStrategy.cs" />
+    <Compile Include="UpdateStrategy\BackstagePassesItemUpdateStrategy.cs" />
+    <Compile Include="IUpdateStrategyFactory.cs" />
+    <Compile Include="Helper\QualityValues.cs" />
+    <Compile Include="UpdateStrategy\StandardItemUpdateStrategy.cs" />
+    <Compile Include="UpdateStrategy\SulfuraUpdateStrategy.cs" />
     <Compile Include="GildedRose.cs" />
-    <Compile Include="GildedRoseTest.cs" />
-    <Compile Include="Item.cs" />
+    <Compile Include="Test\GildedRoseTest.cs" />
+    <Compile Include="Dto\Item.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
