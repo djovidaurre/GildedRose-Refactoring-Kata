@@ -17,7 +17,7 @@ Uso Patrón
 
 El proyecto tiene la siguiente estructura 
 
-(https://github.com/djovidaurre/GildedRose-Refactoring-Kata/blob/TareaSoe/csharp/Resource/tarea_imagen1.PNG)
+![Estructura Proyecto](https://github.com/djovidaurre/GildedRose-Refactoring-Kata/blob/TareaSoe/csharp/Resource/tarea_imagen1.PNG)
 
 
 
